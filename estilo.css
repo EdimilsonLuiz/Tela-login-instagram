@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pai {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  position: relative;
+  left: 6rem;
+}
+
+.profile-photo {
+  width: 100px;
+}
+
+.continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 90%;
+  min-height: 32rem;
+}
+
+.grupo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  padding: 1.3rem;
+  border: 1px solid lightgray;
+}
+
+.grupo:nth-child(1) {
+  min-width: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.instagram-login {
+  background-color: #0095f6;
+  color: #ffffff;
+  margin-top: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url(https://raw.githubusercontent.com/SpruceGabriela/instagram-dio/ad7d513cddc35e2da93a6aa7813917582e6e0896/img/apple-button.png);
+}
+
+.app-download:nth-child(2) {
+  background-image: url(https://raw.githubusercontent.com/SpruceGabriela/instagram-dio/ad7d513cddc35e2da93a6aa7813917582e6e0896/img/googleplay-button.png);
+  margin-left: 40px;
+}
+
+/* media queries  */
+
+@media (max-width: 1500px) {
+  .pai {
+    width: 90%;
+  }
+  .phone {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pai {
+    width: 90%;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .continue {
+    width: 100%;
+  }
+}
